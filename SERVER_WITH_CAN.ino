@@ -23,8 +23,6 @@
 
 #if defined(SEEED_WIO_TERMINAL) && defined(CAN_2518FD)
 
-const int SPI_CS_PIN  = BCM8;
-const int CAN_INT_PIN = BCM25;
 #else
 
 const int SPI_CS_PIN = 5;
@@ -51,12 +49,9 @@ int CH;
 
 
 // Replace with your network credentials
-const char* ssid     = "AIZ_TECH";
-const char* password = "123456789";
-
 /* Your WiFi Credentials */
-//const char* ssid = "TP-Link_8F7F"; // SSID
-//const char* password = "66152613"; // Password
+const char* ssid     = "SEU_SSID"; // SSID
+const char* password = "Password"; // Password
 
 /* Start Webserver */
 AsyncWebServer server(80);
